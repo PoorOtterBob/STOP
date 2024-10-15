@@ -1,6 +1,8 @@
 # ICLR 2025 Submission 116: STOP! A Out-of-Distribution Processor with Robust Spatiotemporal Interaction
 This is the official repository of our ICLR 2025 submitted paper. Please note that our code repository only provides the pre-processed, directly runnable data for <b>KnowAir</b>. The data for <b>LargeST</b> and <b>TrafficStream</b> needs to be obtained and processed as follows, with the corresponding processing files attached in the repository. If not available, they can be obtained from the official repository of the respective dataset.
 
+<img src='STOP.png' alt='The main pipeline of STOP'>
+
 ## 1. Introduction about the Datasets
 ### 1.1 Generating SD, GBA, GLA, CA datasets from LargeST dataset
 In the experiments of LargeST, we used SD, GBA, GLA and CA datasets with years from 2017 to 2021, followed by [LargeST](https://github.com/liuxu77/LargeST/blob/main). For example, you can download CA dataset from the provided [link](https://www.kaggle.com/datasets/liuxu77/largest) and please place the downloaded `archive.zip` file in the `LargeST/data/ca` folder and unzip the file. 
