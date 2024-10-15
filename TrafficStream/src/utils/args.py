@@ -7,7 +7,7 @@ def get_star_config():
     # if need to use the data from multiple years, please use underline to separate them, e.g., 2018_2019
     parser.add_argument('--years', type=str, default='2011')
     parser.add_argument('--checkyears', type=str, default='2012')
-    parser.add_argument('--model_name', type=str, default='star1')
+    parser.add_argument('--model_name', type=str, default='stop')
     parser.add_argument('--seed', type=int, default=3028)
     parser.add_argument('--bs', type=int, default=64)
 
