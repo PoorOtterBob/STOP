@@ -39,8 +39,8 @@ To run STOP on <b>Knowair</b> or <b>TrafficStream</b>, you may enter the corresp
 python experiments/stop/main.py --device cuda:0
 ```
 
-## 4. DIY OOD Parameters As You Want!
+<!--## 4. DIY OOD Parameters As You Want!
 `--max_increase_ratio` is the maximum proportion of nodes that can be added to the test set also determines the number of nodes used in the training set.<br>
 `--test_increase_ratio` is the proportion of existing nodes to be removed from the test set.<br>
 `--test_decrease_ratio` is the proportion of new nodes to be added to the test set relative to the training set.<br>
-`--checkyears` controls the years of data in test.<br>
+`--checkyears` controls the years of data in test.<br>-->
