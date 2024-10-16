@@ -8,27 +8,27 @@ This is the official repository of our ICLR 2025 submitted paper. Please note th
 In the experiments of LargeST, we used SD, GBA, GLA and CA datasets with years from 2017 to 2021, followed by [LargeST](https://github.com/liuxu77/LargeST/blob/main). For example, you can download CA dataset from the provided [link](https://www.kaggle.com/datasets/liuxu77/largest) and please place the downloaded `archive.zip` file in the `LargeST/data/ca` folder and unzip the file. 
 
 First of all, you should go through the jupyter notebook `process_ca_his.ipynb` in the folder `LargeST/data/ca` to process and generate a cleaned version of the flow data. Then, please go through all the cells in the provided jupyter notebooks `generate_SUBDATASET_dataset.ipynb` in the folder `LargeST/data/SUBDATASET` for `SUBDATASET=sd, gba, gla, ca`. Finally use the commands below to generate the traffic flow data of LargeST for our experiments. 
-```
+<!--```
 python LargeST/data/generate_data_for_training_ood.py --dataset SUBDATASET
-```
+```-->
 
 ### 1.2 Generating the TrafficStream Dataset for OOD Setting
-We implement extra experiments on [TrafficStream](https://github.com/AprLie/TrafficStream). We have prepared the adjacency matrix data for you, you need to unzip the TrafficStream zip data from the provided [link](https://drive.google.com/file/d/1P5wowSaNSWBNCK3mQwESp-G2zsutXc5S/view?usp=sharing) and put all the files: `20XX.npz` in folder `district3F11T17/finaldata` into `TrafficStream/data`, then go through the jupyter notebook `generate_ts.ipynb` in the folder `TrafficStream/data` to process the data into the types needed in the STOP framework, and then run similarly to divide the OOD dataset.
-```
+We implement extra experiments on [TrafficStream](https://github.com/AprLie/TrafficStream). We have prepared the adjacency matrix data for you, you need to unzip the TrafficStream zip data from the provided [link](https://drive.google.com/file/d/1P5wowSaNSWBNCK3mQwESp-G2zsutXc5S/view?usp=sharing) and put all the files: `20XX.npz` in folder `district3F11T17/finaldata` into `TrafficStream/data`. <!--, then go through the jupyter notebook `generate_ts.ipynb` in the folder `TrafficStream/data` to process the data into the types needed in the STOP framework, and then run similarly to divide the OOD dataset.-->
+<!--```
 python TrafficStream/data/generate_data_for_training_ood.py
-```
+```-->
 
 ### 1.3 Generating the KnowAir Dataset for OOD Setting
 You need to download the `KnowAir.npy` file from the provided [link](https://drive.google.com/file/d/1R6hS5VAgjJQ_wu8i5qoLjIxY0BG7RD1L/view) and please place the downloaded `Knowair.npy` file in the `Knowair/data` folder to complete the data files.
 
 <br>
 
-## 2. Environmental Requirments
+<!--## 2. Environmental Requirments
 The experiment requires the same environment as [LargeST](https://github.com/liuxu77/LargeST/blob/main), and need to add the libraries mentioned in the requirements in [Knowair](https://github.com/shuowang-ai/PM2.5-GNN).
 
-<br>
+<br>-->
 
-## 3. Model Running
+## 2. Model Running
 To run STOP on <b>LargeST</b>, for example, you may enter the folder `LargeST` and directly execute the Python file in the terminal:
 ```
 python experiments/stop/main.py --device cuda:0 --dataset SUBDATASET --checkyears YEARS
