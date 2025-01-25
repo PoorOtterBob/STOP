@@ -1,5 +1,5 @@
 # ICML 2025 Submission 5800: STOP! A Out-of-Distribution Processor with Robust Spatiotemporal Interaction
-This is the official repository of our ICLR 2025 submitted paper. Please note that our code repository only provides some of the pre-processed, directly runnable data for <b>KnowAir</b> and <b>TrafficStream</b>. The raw data for <b>LargeST</b> needs to be obtained and processed as follows, with the corresponding processing files attached in the repository. If not available, they can be obtained from the official repository of the respective dataset.
+This is the official repository of our ICML 2025 submitted paper. Please note that our code repository only provides some of the pre-processed, directly runnable data for <b>KnowAir</b> and <b>TrafficStream</b>. The raw data for <b>LargeST</b> needs to be obtained and processed as follows, with the corresponding processing files attached in the repository. If not available, they can be obtained from the official repository of the respective dataset.
 
 <img src='STOP.png' alt='The main pipeline of STOP'>
 
