@@ -1,5 +1,5 @@
-# ICML 2025 Submission 5800: STOP! A Out-of-Distribution Processor with Robust Spatiotemporal Interaction
-This is the official repository of our ICML 2025 submitted paper. Please note that our code repository only provides some of the pre-processed, directly runnable data for <b>KnowAir</b> and <b>TrafficStream</b>. The raw data for <b>LargeST</b> needs to be obtained and processed as follows, with the corresponding processing files attached in the repository. If not available, they can be obtained from the official repository of the respective dataset.
+# ICML 2025: Robust Spatio-Temporal Centralized Interaction for OOD Learning
+This is the official repository of our ICML 2025 paper. Please note that our code repository only provides some of the pre-processed, directly runnable data for <b>KnowAir</b> and <b>TrafficStream</b>. The raw data for <b>LargeST</b> needs to be obtained and processed as follows, with the corresponding processing files attached in the repository. If not available, they can be obtained from the official repository of the respective dataset.
 
 <img src='STOP.png' alt='The main pipeline of STOP'>
 
@@ -44,3 +44,16 @@ python experiments/stop/main.py --device cuda:0
 `--test_increase_ratio` is the proportion of existing nodes to be removed from the test set.<br>
 `--test_decrease_ratio` is the proportion of new nodes to be added to the test set relative to the training set.<br>
 `--checkyears` controls the years of data in test.<br>-->
+
+## 📄 Citation
+
+If you find this project helpful, please cite us:
+```bibtex
+@inproceedings{ma2025robust,
+  title     = {Robust Spatio-Temporal Centralized Interaction for OOD Learning},
+  author    = {Jiaming Ma and Bingwu Wang and Pengkun Wang and Zhengyang Zhou and Xu Wang and Yang Wang},
+  booktitle = {Proceedings of the Forty-Second International Conference on Machine Learning (ICML)},
+  year      = {2025}
+}
+
+```
