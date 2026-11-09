@@ -1,4 +1,21 @@
-# ICML 2025: Robust Spatio-Temporal Centralized Interaction for OOD Learning
+<div align="center">
+
+# Robust Spatio-Temporal Centralized Interaction for OOD Learning
+
+[![Venue ICML%202025](https://img.shields.io/badge/Venue-ICML%202025-4b44ce)](https://icml.cc/Conferences/2025)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/) [![PyTorch](https://img.shields.io/badge/PyTorch-%E2%89%A51.10-ee4c2c.svg)](https://pytorch.org/)
+
+<p align="center">
+  <a href="#1-introduction-about-the-datasets">Datasets</a> |
+  <a href="#2-model-running">Running</a> |
+  <a href="#-citation">Citation</a> |
+  <a href="#-license">License</a>
+</p>
+
+</div>
+
 This is the official repository of our ICML 2025 paper. Please note that our code repository only provides some of the pre-processed, directly runnable data for <b>KnowAir</b> and <b>TrafficStream</b>. The raw data for <b>LargeST</b> needs to be obtained and processed as follows, with the corresponding processing files attached in the repository. If not available, they can be obtained from the official repository of the respective dataset.
 
 <img src='STOP.png' alt='The main pipeline of STOP'>
@@ -47,13 +64,21 @@ python experiments/stop/main.py --device cuda:0
 
 ## 📄 Citation
 
-If you find this project helpful, please cite us:
+If you find this repository useful, please cite our paper:
+
 ```bibtex
 @inproceedings{ma2025robust,
-  title     = {Robust Spatio-Temporal Centralized Interaction for OOD Learning},
-  author    = {Jiaming Ma and Bingwu Wang and Pengkun Wang and Zhengyang Zhou and Xu Wang and Yang Wang},
-  booktitle = {Proceedings of the Forty-Second International Conference on Machine Learning (ICML)},
+  title     = {Robust Spatio-Temporal Centralized Interaction for {OOD} Learning},
+  author    = {Ma, Jiaming and Wang, Binwu and Wang, Pengkun and Zhou, Zhengyang and Wang, Xu and Wang, Yang},
+  booktitle = {Proceedings of the 42nd International Conference on Machine Learning (ICML)},
   year      = {2025}
 }
-
 ```
+
+## 🙏 Acknowledgements
+
+Built on [LargeST](https://github.com/liuxu77/LargeST), [TrafficStream](https://github.com/AprLie/TrafficStream) and [PM2.5-GNN (KnowAir)](https://github.com/shuowang-ai/PM2.5-GNN). Each dataset keeps the license of its original release.
+
+## 📜 License
+
+The code in this repository is released under the [MIT License](LICENSE).
