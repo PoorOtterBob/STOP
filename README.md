@@ -62,6 +62,15 @@ python experiments/stop/main.py --device cuda:0
 `--test_decrease_ratio` is the proportion of new nodes to be added to the test set relative to the training set.<br>
 `--checkyears` controls the years of data in test.<br>-->
 
+## ⚙️ Installation (uv)
+
+Dependencies are declared in [`pyproject.toml`](pyproject.toml) and managed with [uv](https://docs.astral.sh/uv/):
+
+```bash
+uv sync                      # create .venv and install dependencies
+cd LargeST && uv run python experiments/stop/main.py --device cuda:0 --dataset sd --checkyears 2019
+```
+
 ## 📄 Citation
 
 If you find this repository useful, please cite our paper:

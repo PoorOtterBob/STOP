@@ -1,7 +1,6 @@
 import time
 import torch
 import numpy as np
-import sys
 from tqdm import tqdm
 from src.utils.metrics import masked_mae
 from src.utils.metrics import masked_mape

@@ -1,0 +1,21 @@
+[project]
+name = "stop"
+version = "0.1.0"
+description = "Official code of STOP (ICML 2025)"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+dependencies = [
+    "torch",
+    "numpy",
+    "scipy",
+    "tqdm",
+    "pyyaml",
+    "torch-geometric",
+    "geopy",
+    "metpy",
+    "bresenham",
+]
+
+[tool.uv]
+package = false

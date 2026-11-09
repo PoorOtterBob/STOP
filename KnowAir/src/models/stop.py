@@ -1,11 +1,7 @@
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
-import math
 import copy
-import numpy as np
 from src.base.model import BaseModel
-import sys
 CUDA_LAUNCH_BLOCKING=1
 
 class moving_avg(nn.Module):
